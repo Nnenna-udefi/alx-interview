@@ -13,8 +13,7 @@ def pascal_triangle(n):
         prev_row = c[-1]
         curr_row = [1]
         for j in range(1, len(prev_row)):
-            curr_row.append(prev_row[j - i] +
-                            prev_row[j])
+            curr_row.append(prev_row[j - 1] + prev_row[j])
         curr_row.append(1)
         c.append(curr_row)
     return c
