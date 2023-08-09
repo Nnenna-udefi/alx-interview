@@ -7,6 +7,9 @@
 
 def minOperations(n):
     """
+        Code finds the prime factors of n and then calculate the sum
+        of those prime factors to determine the mimumum no of operations
+
         no_operations: number of operations needed to generate 'n' 'H'
         characters
         n: factors to determine number of operations
