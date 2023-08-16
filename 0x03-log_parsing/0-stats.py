@@ -29,11 +29,11 @@ if __name__ == '__main__':
                 if processed_line % 10 == 0:
                     print("File size: {}".format(total_file_size))
                     for cod, count in sorted(code.items()):
-                        if count > 0:
+                        if count:
                             print("{}: {}".format(cod, count))
             except(IndexError, ValueError):
                 # if the input format is not correct, skip the lines
-                continue
+                pass
     except KeyboardInterrupt:
         # if the keyboard is interrupted (control C) print final statistics
         print("File size: {}".format(total_file_size))
