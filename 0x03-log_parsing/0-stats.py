@@ -13,12 +13,12 @@ if __name__ == '__main__':
     statistics = {}
     for code in codes:
         statistics[code] = 0
-    
+
     def print_statistics(statistics: dict, total_file_size: int):
-            print('File size: {}'.format(total_file_size))
-            for code, count in sorted(statistics.items()):
-                if count:
-                    print("{}: {}".format(code, count))
+        print('File size: {}'.format(total_file_size))
+        for code, count in sorted(statistics.items()):
+            if count:
+                print("{}: {}".format(code, count))
 
     try:
         for line in sys.stdin:
