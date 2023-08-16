@@ -31,7 +31,7 @@ if __name__ == '__main__':
                     for cod, count in sorted(code.items()):
                         if count:
                             print("{}: {}".format(cod, count))
-            except(IndexError, ValueError):
+            except BaseException:
                 # if the input format is not correct, skip the lines
                 pass
     except KeyboardInterrupt:
