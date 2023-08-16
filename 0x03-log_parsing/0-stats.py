@@ -10,9 +10,10 @@ if __name__ == '__main__':
     total_file_size = 0
     codes = ["200", "301", "400", "401", "403", "404", "405", "500"]
     processed_line = 0
-    statistics = {code: 0 for code in codes}
-
-
+    statistics = {}
+    for code in codes:
+        statistics[code] = 0
+    
     def print_statistics(statistics: dict, total_file_size: int):
             print('File size: {}'.format(total_file_size))
             for code, count in sorted(statistics.items()):
