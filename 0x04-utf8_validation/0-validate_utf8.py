@@ -1,8 +1,12 @@
 #!/usr/bin/python3
-"""script"""
+"""
+    method that determines if a given data set
+    represents a valid UTF-8 encoding.
+"""
 
 
 def validUTF8(data):
+    """data: list of integers"""
     num_bytes = 0
 
     for num in data:
