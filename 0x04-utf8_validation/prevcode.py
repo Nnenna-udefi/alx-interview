@@ -12,7 +12,7 @@ def validUTF8(data):
     for num in data:
         # convert the value num into a binary representation
         # and extract the last 8 characters form the binary string
-        binary_rep = format(num, '#010b')[-8:]
+        binary_rep = format(num, '08b')
 
         no_bytes = 0  # Number of bytes in the current UTF-8 character
 
@@ -33,7 +33,7 @@ def validUTF8(data):
 
         # Continuation Byte Check
         if no_bytes > 1:
-            if not (binary_rep[1] == '0' and binary_rep[2] == '1'):
+            if not (binary_rep[1] == '1' and binary_rep[2] == '0'):
                 return False
 
         # Reduce the number of bytes to process by 1 after each integer.
