@@ -31,7 +31,8 @@ def queens_position(n, row=0, col=[], b=[], c=[]):
     if row < n:
         for j in range(n):
             if j not in col and row + j not in b and row - j not in c:
-                yield from queens_position(n, row + 1, col + [j], b + [row + j], c + [row - j])
+                yield from queens_position(n, row + 1, col + [j],
+                                           b + [row + j], c + [row - j])
     else:
         yield col
 
