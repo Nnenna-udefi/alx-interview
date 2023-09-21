@@ -14,7 +14,8 @@ def makeChange(coins, total):
     if total <= 0:
         return 0
 
-    # Initialize a table to store the minimum number of coins needed for each amount from 0 to total
+    # Initialize a table to store the minimum number
+    # of coins needed for each amount from 0 to total
     length = total + 1
     value = [float('inf')] * (length)
     value[0] = 0
