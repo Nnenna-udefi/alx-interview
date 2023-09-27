@@ -12,10 +12,10 @@ def island_perimeter(grid):
     if not grid:
         return 0
 
-    rows = len(grid);
+    rows = len(grid)
     # calculates the length of the first row in the grid.
     # Since each row has the same number of columns
-    columns = len(grid[0]);
+    columns = len(grid[0])
 
     perimeter = 0
 
