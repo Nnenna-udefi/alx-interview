@@ -9,5 +9,5 @@ Usage: nqueens N
 - The program should print every possible solution to the problem
 - One solution per line
 - Format: see example
-- You don’t have to print the solutions in a specific order
-- You are only allowed to import the sys module
+  - You don’t have to print the solutions in a specific order
+  - You are only allowed to import the sys module
