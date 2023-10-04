@@ -30,7 +30,7 @@ def play_game(n):
         move = max(valid_moves)
         remaining_numbers -= set(range(move, n + 1, move))
         maria_turn = not maria_turn
-    return 'Maria' if maria_turn else 'Ben'
+    return 'Ben'
 
 
 def isWinner(x, nums):
@@ -43,7 +43,8 @@ def isWinner(x, nums):
     maria_wins = 0
     ben_wins = 0
 
-    for n in nums:
+    for i in range(x):
+        n = nums[i]
         winner = play_game(n)
         if winner == 'Maria':
             maria_wins += 1
